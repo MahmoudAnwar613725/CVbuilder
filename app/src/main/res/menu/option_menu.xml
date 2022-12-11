@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_linkedin"
+        android:title="linkedin"
+        android:icon="@drawable/contact_linkedin"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_twitter"
+        android:title="twitter"
+        android:icon="@drawable/contact_github"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_settings"
+        android:title="Settings"
+        android:icon="@android:drawable/ic_menu_call"
+        app:showAsAction="ifRoom" />
+</menu>

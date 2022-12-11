@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CVbuilder</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tab_home">HOME</string>
+    <string name="tab_work">WORK</string>
+    <string name="tab_about_me">ABOUT</string>
+    <string name="tab_contact">CONTACT</string>
+    <string name="projects"><b>Onyx Distribution</b>:Android Application for sales representative.\n<b>Distribution track</b>:Android application for managers to track their sales resps.\n<b>Inventroy</b>:Android application to make inventory process for companies.\n<b>MRM</b>:Android application for managing restaurants orders.</string>
+</resources>
