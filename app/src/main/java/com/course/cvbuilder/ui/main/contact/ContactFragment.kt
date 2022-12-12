@@ -35,7 +35,7 @@ class ContactFragment : Fragment() {
         }
 
         v.findViewById<LinearLayout>(R.id.github).setOnClickListener{
-            browseWebsite("https://www.linkedin.com/in/mahmoud-anwar-fadel/")
+            browseWebsite("https://github.com/MahmoudAnwar613725")
         }
         v.findViewById<LinearLayout>(R.id.email).setOnClickListener{
             sendEmail()
@@ -53,7 +53,7 @@ class ContactFragment : Fragment() {
                 browseWebsite("https://www.linkedin.com/in/mahmoud-anwar-fadel/")
             }
             R.id.github->{
-                browseWebsite("https://www.linkedin.com/in/mahmoud-anwar-fadel/")
+                browseWebsite("https://github.com/MahmoudAnwar613725")
             }
             R.id.email->{
                 sendEmail()
@@ -64,9 +64,9 @@ class ContactFragment : Fragment() {
 
 
     private fun makeCall() {
-        val intent = Intent(Intent.ACTION_DIAL)
-        intent.data = Uri.parse("tele:906346346")
-        startActivity(intent)
+        val dialIntent = Intent(Intent.ACTION_DIAL)
+        dialIntent.data = Uri.parse("tel:" + "8344814819")
+        startActivity(dialIntent)
     }
 
 

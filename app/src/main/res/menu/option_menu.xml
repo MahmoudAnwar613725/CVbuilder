@@ -14,8 +14,14 @@
         android:icon="@drawable/contact_github"
         app:showAsAction="ifRoom" />
     <item
+        android:id="@+id/menu_call"
+        android:title="call"
+        android:icon="@drawable/ic_baseline_call_24"
+        app:showAsAction="never" />
+
+    <item
         android:id="@+id/menu_settings"
-        android:title="Settings"
-        android:icon="@android:drawable/ic_menu_call"
-        app:showAsAction="ifRoom" />
+        android:title="settings"
+        android:icon="@drawable/ic_baseline_settings_applications_24"
+        app:showAsAction="never" />
 </menu>

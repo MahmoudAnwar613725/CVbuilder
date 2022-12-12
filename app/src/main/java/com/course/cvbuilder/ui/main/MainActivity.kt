@@ -1,5 +1,7 @@
 package com.course.cvbuilder.ui.main
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
@@ -42,12 +44,19 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.menu_linkedin -> {
+                browseWebsite("https://www.linkedin.com/in/mahmoud-anwar-fadel/")
             }
             R.id.menu_twitter -> {
-
+                browseWebsite("https://github.com/MahmoudAnwar613725")
             }
         }
         return super.onOptionsItemSelected(item)
+    }
+
+
+    private fun browseWebsite(website: String) {
+        val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(website));
+        startActivity(browserIntent);
     }
 
 }

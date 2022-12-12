@@ -1,4 +1,4 @@
-package edu.miu.walmartlogin.adapter
+package com.course.cvbuilder.ui.main.work
 
  import android.annotation.SuppressLint
 import android.content.Context
@@ -10,6 +10,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
  import com.course.cvbuilder.R
  import edu.miu.CVBuilderApp.data.Work
+ import edu.miu.walmartlogin.adapter.BaseViewHolder
 
 class WorkAdapter(val context: Context, val workList: MutableList<Work>) :
     RecyclerView.Adapter<BaseViewHolder?>() {
@@ -18,11 +19,6 @@ class WorkAdapter(val context: Context, val workList: MutableList<Work>) :
         val itemEvents: View = LayoutInflater.from(viewGroup.context)
             .inflate(R.layout.item_work, viewGroup, false)
         return AssignedTasksViewHolder(itemEvents)
-    }
-
-    fun addWork(work: Work){
-        workList.add(work)
-        notifyDataSetChanged()
     }
 
     override fun onBindViewHolder(baseViewHolder: BaseViewHolder, i: Int) {

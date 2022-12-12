@@ -3,14 +3,11 @@ package com.course.cvbuilder.ui.main.work
 import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.course.cvbuilder.R
 import edu.miu.CVBuilderApp.data.Work
-import edu.miu.walmartlogin.adapter.WorkAdapter
 
 
 /**

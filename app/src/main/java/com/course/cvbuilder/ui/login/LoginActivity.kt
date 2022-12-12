@@ -12,14 +12,22 @@ import androidx.appcompat.app.AppCompatActivity
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityLoginBinding
-    private lateinit var sharedPref : SharedPreferences
+    private lateinit var prefs : SharedPreferences
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
-       // sharedPref = AppUtils.setPref(this)
+        prefs = getSharedPreferences("cvbuilder", MODE_PRIVATE)
+        getSaveUser()
 
-     }
+    }
+
+    private fun getSaveUser() {
+        val prefUser = prefs.getString("username","")
+        val prefPass = prefs.getString("password","")
+        prefUser?.let { binding.etEmail.setText(it) }
+        prefPass?.let { binding.etPassword.setText(it) }
+    }
 
     fun onLogin(view: View) {
         val user = binding.etEmail.text.toString().trim()
@@ -37,9 +45,10 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun openMainActivity(user: String, pass: String){
-        with(sharedPref.edit()) {
-
-            apply()
+        with(prefs.edit()) {
+            putString("username", user)
+            putString("password", pass)
+             apply()
         }
 
         startActivity(Intent(this, MainActivity::class.java))
