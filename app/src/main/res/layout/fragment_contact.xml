@@ -33,7 +33,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-black"
                     android:text="My Contacts"
-                    android:textColor="@color/purple_200"
+                    android:textColor="@color/black"
                     android:textSize="18sp" />
 
                 <LinearLayout
